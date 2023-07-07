@@ -1,13 +1,79 @@
-body {
+* {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+p {
+  font-size: 1.6rem;
+}
+h1 {
+  font-size: 6rem;
+}
+
+.App {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  background-color: gray;
+  background-image: url("./assets/dedu-adrian-BxT5oqgztNc-unsplash.jpg");
+  background-size: cover;
+  color: white;
+  background-blend-mode: multiply;
+}
+
+.container {
+  margin: auto;
+  height: 80%;
+  padding: 10px;
+  padding-top: 50px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.top {
+  width: 100%;
+  margin: 1rem auto;
+  margin-left: 150px;
+}
+.top .description {
+  position: absolute;
+  right: 10%;
+  transform: rotate(270deg);
+}
+
+.bottom {
+  display: flex;
+  justify-content: space-evenly;
+  text-align: center;
+  width: 100%;
+  margin: 1rem auto;
+  border-radius: 12px;
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+.bold {
+  font-weight: 700;
+}
+
+.search {
+  text-align: center;
+  padding: 1rem;
+}
+.input {
+  width: 25%;
+  text-align: center;
+  padding: 0.5rem;
+  font-size: 1rem;
+  border-radius: 10px;
+  letter-spacing: 1px;
+  color: burlywood;
+  border: 1px solid white;
+  background-color: rgba(255, 255, 255, 0.1);
 }
